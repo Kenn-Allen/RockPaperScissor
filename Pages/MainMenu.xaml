@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RockPaperScissor.Pages.MainMenu"
+             Title="" BackgroundColor="AliceBlue"
+             NavigationPage.HasNavigationBar="False">
+
+    <Grid ColumnDefinitions="*, 475, *" RowDefinitions="175, 125, 125, 125">
+        <Label Grid.Row="0" Grid.Column="1"
+               HorizontalOptions="Center" VerticalOptions="End"
+               HorizontalTextAlignment="Center"
+               FontSize="43" FontFamily="Georgia"
+               Text="Rock, Paper, Scissors...SHOOT!"
+               />
+
+        <Button Grid.Row="1" Grid.Column="1"
+                Text="New Game"
+                FontSize="30"
+                FontFamily="Comic Sans MS"
+                Margin="90, 70, 90, 0"
+                Clicked="NewBtnClicked"
+                />
+        <Button Grid.Row="2" Grid.Column="1"
+                Text="Statistics"
+                FontSize="30"
+                FontFamily="Comic Sans MS"
+                Margin="90, 70, 90, 0"
+                Clicked="StatsBtnClicked"/>
+
+        <Button Grid.Row="3" Grid.Column="1"
+                VerticalOptions="End"
+                Text="Exit" 
+                FontSize="30"
+                FontFamily="Comic Sans MS"
+                Margin="90, 70, 90, 0"
+                Clicked="QuitBtnClicked"/>
+
+        <VerticalStackLayout  Grid.Column="1">
+
+
+
+        </VerticalStackLayout>
+
+    </Grid>
+</ContentPage>
